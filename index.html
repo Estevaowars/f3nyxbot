@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adição ao Meu Servidor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topo">
+        <div class="menu-hamburguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="barra-lateral">
+        <a href="#">Comandos</a>
+        <a href="#" onclick="window.location.href='(link unavailable)';">Adicionar ao meu servidor</a>
+    </div>
+
+    <div class="conteudo-botao">
+        <img src="F3nyx.jpg" alt="Imagem do botão" class="imagem-acima-do-botao">
+        <button class="botao-adicionar" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1338493916097413252&scope=bot%20applications.commands&permissions=0';">Adicionar ao meu servidor</button>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.barra-lateral');
+        var hamburguer = document.querySelector('.menu-hamburguer');
+        menu.classList.toggle('aberto');
+        hamburguer.classList.toggle('fechar');
+    }
+</script>
+</html>
